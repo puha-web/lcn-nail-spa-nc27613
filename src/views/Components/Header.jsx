@@ -11,29 +11,30 @@ import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/blogPostsPageStyle.jsx";
 
 //data
-import aboutUs from '../../db/AboutUs';
 import Logo from '../../assets/img/salon/logo/logo.png';
 import Style from '../../db/ElementStyles.js';
 
 
 class PageHeader extends React.Component {
   render() {
-    const { classes, ...rest} = this.props;
+    const { classes, ...rest } = this.props;
 
-    return(
-      <Header style={{ margin: 0, padding: 0 }}
-      color="transparent"
-      brand={
-          <img src={Logo} style={{height: '50px', margin: 0, padding: 0}}></img>
-      }
-      links={<HeaderLinks dropdownHoverColor="info" />}
-      fixed
-      changeColorOnScroll={{
-        height: 1,
-        color: Style.headerBackground
-      }}
-      {...rest}
-    />
+    return (
+      <Header
+        color="transparent"
+        brand={<div style={Style.brandName} >
+                  <span><img id='salon-logo' src={Logo}  style={Style.logo}/></span>
+                  <span>NAIL SPA</span>
+              </div> 
+              }
+        links={<HeaderLinks dropdownHoverColor={Style.dropdownColorBackground} style={Style.NavMenu}/>}
+        fixed
+        changeColorOnScroll={{
+          height: 1,
+          color: Style.headerBackground,
+        }}
+        {...rest}
+      />
     )
   }
 }

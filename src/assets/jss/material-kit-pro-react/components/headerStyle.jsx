@@ -36,7 +36,7 @@ const headerStyle = theme => ({
   },
   absolute: {
     position: "absolute",
-    top: "auto"
+    top: "auto",
   },
   fixed: {
     position: "fixed"

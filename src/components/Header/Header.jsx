@@ -36,7 +36,7 @@ class Header extends React.Component {
     }
   }
   headerColorChange() {
-    const { classes, color, logo, changeColorOnScroll } = this.props;
+    const { classes, color, changeColorOnScroll } = this.props;
     const windowsScrollTop = window.pageYOffset;
     if (windowsScrollTop > changeColorOnScroll.height) {
       document.body
@@ -45,7 +45,7 @@ class Header extends React.Component {
       document.body
         .getElementsByTagName("header")[0]
         .classList.add(classes[changeColorOnScroll.color]);
-    } else {
+      } else {
       document.body
         .getElementsByTagName("header")[0]
         .classList.add(classes[color]);

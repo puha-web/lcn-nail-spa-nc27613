@@ -124,7 +124,7 @@ function HeaderLinks({ ...props }) {
               <AttachMoney className={classes.dropdownIcons} /> Coupon
             </Link>,
             <Link to="/career" className={classes.dropdownLink}>
-              <Work className={classes.dropdownIcons} /> Career
+              <GiftCard className={classes.dropdownIcons} /> Career
             </Link>,
 
             //   <Link to="/contact-us" className={classes.dropdownLink}>
