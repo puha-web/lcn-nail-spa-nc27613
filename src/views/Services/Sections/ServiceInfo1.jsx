@@ -45,21 +45,10 @@ const serviceList = (props) => (
         }
       </div>
     </CardBody>
-    <CardFooter>
+    <CardFooter style={{ justifyContent: 'center'}}>
       <h5>
-        The hearling herbal wrap is to help relive stress, aches, tendonitis, arthritis, scramps,
-        muscle pain, and increase blood circulation. It is 100% all nature aromatherapy.
-        When used cold, it can promote muscle relaxation, reduce fever, swelling, sprained hans, bites,
-        bruises, and stings.
-        <br />
-        <br />
-
         If you require any extra services, please talk to our technician and confirm the price.
-
       </h5>
-
-
-
     </CardFooter>
 
   </Card>

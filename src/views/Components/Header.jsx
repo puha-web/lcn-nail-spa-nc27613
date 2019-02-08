@@ -21,15 +21,10 @@ class PageHeader extends React.Component {
     const { classes, ...rest} = this.props;
 
     return(
-      <Header
+      <Header style={{ margin: 0, padding: 0 }}
       color="transparent"
       brand={
-        <a href='/'>
           <img src={Logo} style={{height: '50px', margin: 0, padding: 0}}></img>
-        </a>
-        // <h4
-        //   style={{ fontFamily: "'Coiny', cursive", fontSize: '25px', padding: 0, margin: 0 }}
-        // >{aboutUs.salonName}</h4>
       }
       links={<HeaderLinks dropdownHoverColor="info" />}
       fixed

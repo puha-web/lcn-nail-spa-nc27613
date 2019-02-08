@@ -12,6 +12,7 @@ import Contact from "views/Contact/Contact.jsx";
 import Coupon from "views/Coupon/Coupon.jsx";
 import Gallery from "views/Gallery/Gallery.jsx";
 import Services from 'views/Services/Services.jsx';
+import Career from 'views/Career/Career.jsx';
 
 import "assets/scss/material-kit-pro-react.css?v=1.2.0";
 // import SocialMedia from "./views/Components/SocialMedia.jsx";
@@ -29,6 +30,7 @@ ReactDOM.render(
       <Route exact path='/coupon' component={Coupon} />
       <Route exact path='/gallery' component={Gallery} />
       <Route exact path='/service' component={Services} />
+      <Route exact path='/career' component={Career} />
     </Switch>
     {/* <SocialMedia /> */}
     <Footer />

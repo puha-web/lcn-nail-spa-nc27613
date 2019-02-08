@@ -16,7 +16,7 @@ import Apps from "@material-ui/icons/Apps";
 import LocationOn from "@material-ui/icons/LocationOn";
 import AttachMoney from "@material-ui/icons/AttachMoney";
 import GiftCard from "@material-ui/icons/CardGiftcard";
-import Promotion from "@material-ui/icons/FavoriteBorder";
+import Work from "@material-ui/icons/Work";
 
 
 
@@ -123,9 +123,9 @@ function HeaderLinks({ ...props }) {
             <Link to="/coupon" className={classes.dropdownLink}>
               <AttachMoney className={classes.dropdownIcons} /> Coupon
             </Link>,
-            // <Link to="/gift-card" className={classes.dropdownLink}>
-            //   <GiftCard className={classes.dropdownIcons} /> Gift Card
-            // </Link>,
+            <Link to="/career" className={classes.dropdownLink}>
+              <Work className={classes.dropdownIcons} /> Career
+            </Link>,
 
             //   <Link to="/contact-us" className={classes.dropdownLink}>
             //     <Call className={classes.dropdownIcons} /> Contact Us

@@ -36,7 +36,7 @@ class Header extends React.Component {
     }
   }
   headerColorChange() {
-    const { classes, color, changeColorOnScroll } = this.props;
+    const { classes, color, logo, changeColorOnScroll } = this.props;
     const windowsScrollTop = window.pageYOffset;
     if (windowsScrollTop > changeColorOnScroll.height) {
       document.body
@@ -65,7 +65,7 @@ class Header extends React.Component {
       [classes.appBar]: true,
       [classes[color]]: color,
       [classes.absolute]: absolute,
-      [classes.fixed]: fixed
+      [classes.fixed]: fixed,
     });
     return (
       <AppBar className={appBarClasses}>
