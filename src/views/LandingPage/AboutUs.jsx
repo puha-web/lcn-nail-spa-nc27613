@@ -16,6 +16,7 @@ import Services from "./Sections/SectionWeOffer.jsx";
 import OpenHrs from "./Sections/SectionHours.jsx";
 import Specials from "./Sections/SectionSpecials.jsx";
 import SocialMedia from "../Components/SocialMedia.jsx";
+import SalonPhoto from './Sections/SalonPhotos.jsx';
 
 class LandingPage extends React.Component {
   componentDidMount() {
@@ -33,6 +34,7 @@ class LandingPage extends React.Component {
             <Services />
             <Specials />
             <OpenHrs />
+            <SalonPhoto />
             <SocialMedia />
           </div>
         </div>

@@ -38,6 +38,7 @@ import SalonPhoto from './salonGallery.jsx';
 import ServiceBgImg from 'assets/img/salon/serviceBg.jpg';
 import SocialMedia from "../Components/SocialMedia.jsx";
 
+
 //Data
 import aboutData from '../../db/AboutUs';
 import elementStyle from '../../db/ElementStyles';
@@ -94,7 +95,7 @@ class Location extends React.Component {
             <div className={classes.container}>
               {/* <h2 className={classes.title}>Our Location</h2> */}
               <GridContainer>
-                <GridItem md={5} sm={5} className={classes}>
+                <GridItem md={8} sm={8} className={classes}>
                   <Card style={{ backgroundImage: `url(${ServiceBgImg})` }}>
                     <CardHeader
                       contact
@@ -108,11 +109,26 @@ class Location extends React.Component {
                         <GridItem>
                           <InfoArea
                             className={classes.info}
+                            title={aboutData.phone}
+                            description={
+                              <Button
+                                round
+                                color={elementStyle.btnColor}
+                                size="sm"
+                                href={phoneNum}
+                                rel="noopener noreferrer"
+                              >
+                                Call Now</Button>
+                            }
+                            icon={Phone}
+                            iconColor={elementStyle.iconColor}
+                          />
+                          <InfoArea
+                            className={classes.info}
                             title={
                               <div>
                                 <span>
-                                  {aboutData.address.street},
-                                  <br /> {aboutData.address.city}, {aboutData.address.state}. {aboutData.address.zipCode}
+                                  {aboutData.address.street}, {aboutData.address.city}, {aboutData.address.state}. {aboutData.address.zipCode}
                                 </span>
                               </div>
                             }
@@ -133,22 +149,6 @@ class Location extends React.Component {
                           />
                           <InfoArea
                             className={classes.info}
-                            title={aboutData.phone}
-                            description={
-                              <Button
-                                round
-                                color={elementStyle.btnColor}
-                                size="sm"
-                                href={phoneNum}
-                                rel="noopener noreferrer"
-                              >
-                                Call Now</Button>
-                            }
-                            icon={Phone}
-                            iconColor={elementStyle.iconColor}
-                          />
-                          <InfoArea
-                            className={classes.info}
                             title="Walks-In Welcome"
                             icon={WalkIn}
                             iconColor={elementStyle.iconColor}
@@ -164,8 +164,54 @@ class Location extends React.Component {
                     </CardBody>
                   </Card>
                 </GridItem>
-                <GridItem md={7} sm={7} className={classes.mlAuto}>
-                  <SalonPhoto />
+                <GridItem md={4} sm={4} className={classes.mlAuto}>
+                  <Card className={classes.card1}>
+                    {/* <CardHeader
+                    contact
+                    color={elementStyle.btnColor}
+                    className={classes.textCenter}
+                  >
+                    <h4 className={classes.cardTitle}>Business Hours</h4>
+                  </CardHeader> */}
+                    <CardBody>
+                      <GridContainer>
+
+                        <GridItem xs={12} sm={12} md={12}>
+                          <h4 className={classes.cardTitle}><strong>We Open</strong></h4>
+
+                          {aboutData.busHrs.map(busHr => (
+                            <InfoArea
+                              className={classes.info}
+                              title={
+                                <span>
+                                  {busHr.dates} <br />
+                                  {busHr.time}
+                                </span>
+                              }
+
+                              icon={busHr.time === "Closed" ? ClosedHrs : OpenHrs}
+                              iconColor={elementStyle.iconColor}
+                            />
+                          ))}
+                          {/* <InfoArea
+                            className={classes.info}
+                            title={<h4>Walks-In Welcome</h4>}
+                            icon={WalkIn}
+                            iconColor={elementStyle.iconColor}
+                          />
+                          <InfoArea
+                            className={classes.info}
+                            title={<h4>We Accept Credit Cards</h4>}
+                            icon={CreditCard}
+                            iconColor={elementStyle.iconColor}
+                          /> */}
+                        </GridItem>
+                      </GridContainer>
+                    </CardBody>
+
+                  </Card>
+
+                  {/* <SalonPhoto /> */}
                 </GridItem>
               </GridContainer>
               <SocialMedia />

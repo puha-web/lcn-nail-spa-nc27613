@@ -42,7 +42,7 @@ const AboutUs = {
   addressLink: 'https://www.google.com/maps/dir//lcn+nail+spa+raleigh+nc/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x89acf9d4b5e8080f:0x2ef50e3bb0a76f03?ved=2ahUKEwizjtS1xJ7gAhURGt8KHbLXD5UQ9RcwC3oECAYQEA',
   phone: '(984) 202-5188',
   email: '',
-  salonPhoto: 'https://s3.amazonaws.com/lcn-nail-spa-nc27613/images/gallery/salonPhoto/gallery-160625.jpg'
+  salonPhoto: 'https://s3.amazonaws.com/lcn-nail-spa-nc27613/images/gallery/salonPhoto/salon3.jpg'
 }
 
 export default AboutUs;
