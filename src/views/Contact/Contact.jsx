@@ -34,7 +34,6 @@ import contactUsStyle from "assets/jss/material-kit-pro-react/views/contactUsSty
 
 
 //Components
-import SalonPhoto from './salonGallery.jsx';
 import ServiceBgImg from 'assets/img/salon/serviceBg.jpg';
 import SocialMedia from "../Components/SocialMedia.jsx";
 
@@ -102,7 +101,7 @@ class Location extends React.Component {
                       color={elementStyle.btnColor}
                       className={classes.textCenter}
                     >
-                      <h4 className={classes.cardTitle}>Contact Us</h4>
+                      <h4 className={classes.cardTitle}><strong>Contact Us</strong></h4>
                     </CardHeader>
                     <CardBody>
                       <GridContainer>
@@ -210,8 +209,6 @@ class Location extends React.Component {
                     </CardBody>
 
                   </Card>
-
-                  {/* <SalonPhoto /> */}
                 </GridItem>
               </GridContainer>
               <SocialMedia />
