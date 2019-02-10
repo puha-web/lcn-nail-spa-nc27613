@@ -9,13 +9,10 @@ import { Link } from "react-router-dom";
 import withStyles from "@material-ui/core/styles/withStyles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-import Icon from "@material-ui/core/Icon";
 
 // @material-ui/icons
-import Apps from "@material-ui/icons/Apps";
 import LocationOn from "@material-ui/icons/LocationOn";
 import AttachMoney from "@material-ui/icons/AttachMoney";
-import GiftCard from "@material-ui/icons/CardGiftcard";
 import Work from "@material-ui/icons/Work";
 
 
@@ -124,7 +121,7 @@ function HeaderLinks({ ...props }) {
               <AttachMoney className={classes.dropdownIcons} /> Coupon
             </Link>,
             <Link to="/career" className={classes.dropdownLink}>
-              <GiftCard className={classes.dropdownIcons} /> Career
+              <Work className={classes.dropdownIcons} /> Career
             </Link>,
 
             //   <Link to="/contact-us" className={classes.dropdownLink}>
