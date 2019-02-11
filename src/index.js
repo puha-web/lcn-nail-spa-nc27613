@@ -26,7 +26,7 @@ function initializeReactGA() {
   ReactGA.pageview('/service');
   ReactGA.pageview('/gallery');
   ReactGA.pageview('/career');
-  ReactGA.pageview('/location');
+  ReactGA.pageview('/contact');
   ReactGA.pageview('/coupon');
 };
 
