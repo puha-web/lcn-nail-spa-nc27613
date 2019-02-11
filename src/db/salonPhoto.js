@@ -30,10 +30,10 @@ const gallery = [
     id: 7,
     image: 'https://s3.amazonaws.com/lcn-nail-spa-nc27613/images/gallery/salonPhoto/salon6.jpg'
   },
-  {
-    id: 8,
-    image: 'https://s3.amazonaws.com/lcn-nail-spa-nc27613/images/gallery/salonPhoto/salon7.jpg'
-  },
+  // {
+  //   id: 8,
+  //   image: 'https://s3.amazonaws.com/lcn-nail-spa-nc27613/images/gallery/salonPhoto/salon7.jpg'
+  // },
   {
     id: 9,
     image: 'https://s3.amazonaws.com/lcn-nail-spa-nc27613/images/gallery/salonPhoto/salon8.jpg'

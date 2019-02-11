@@ -14,8 +14,23 @@ import Gallery from "views/Gallery/Gallery.jsx";
 import Services from 'views/Services/Services.jsx';
 import Career from 'views/Career/Career.jsx';
 
+import ReactGA from 'react-ga';
+
 import "assets/scss/material-kit-pro-react.css?v=1.2.0";
 // import SocialMedia from "./views/Components/SocialMedia.jsx";
+
+
+function initializeReactGA() {
+  ReactGA.initialize('UA-134242110-1');
+  ReactGA.pageview('/');
+  ReactGA.pageview('/service');
+  ReactGA.pageview('/gallery');
+  ReactGA.pageview('/career');
+  ReactGA.pageview('/location');
+  ReactGA.pageview('/coupon');
+};
+
+initializeReactGA();
 
 var hist = createBrowserHistory();
 
@@ -26,7 +41,7 @@ ReactDOM.render(
     <Switch>
       <Route exact path='/'  component={AboutUs} />
       <Route exact path='/about-us' component={AboutUs} />
-      <Route exact path='/location' component={Contact} />
+      <Route exact path='/contact' component={Contact} />
       <Route exact path='/coupon' component={Coupon} />
       <Route exact path='/gallery' component={Gallery} />
       <Route exact path='/service' component={Services} />

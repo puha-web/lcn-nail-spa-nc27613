@@ -30,7 +30,7 @@ function SectionProjects({ ...props }) {
                 }`}
             >
               <h2 className={classes.title}>
-                Our Work
+                Our Works
               </h2>
             </GridItem>
           </GridContainer>

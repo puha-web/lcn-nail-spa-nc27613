@@ -22,7 +22,7 @@ const AboutUs = {
       img: 'https://s3.amazonaws.com/lcn-nail-spa-nc27613/images/weOffer/pedi9.png'
     },
     { name: "Waxing",
-      img: 'https://s3.amazonaws.com/lcn-nail-spa-nc27613/images/weOffer/waxing1.png'
+      img: 'https://s3.amazonaws.com/lcn-nail-spa-nc27613/images/ourSpecials/waxing2.jpg'
     },
     { name: "Kids' Services",
       img: 'https://s3.amazonaws.com/lcn-nail-spa-nc27613/images/weOffer/nailArt1.png'
